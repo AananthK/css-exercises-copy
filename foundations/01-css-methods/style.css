@@ -1,0 +1,12 @@
+/* styles.css*/
+
+/*This is a comment in CSS*/
+/*This file is used for External CSS implementation (MOST COMMON METHOD)*/
+
+div {
+    color: white;
+    background-color: red;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
