@@ -1,0 +1,21 @@
+/* style,css */
+
+.odd { /* Type Selector (Can refer to multiple elements; element can also have multiple classes) */
+    font-family: Verdana, DejaVu Sans, sans-serif;
+    background-color: #f79489; 
+}
+
+#element3{ /* ID Selector (Only unique to one element) */
+    font-size: 24px;
+}
+
+.even.blue-txt { /* Chaining Class Selectors*/
+    color: blue;
+    font-size: 32px;
+}
+
+.even#element4{
+    font-size: 24px;
+    font-weight: bold;
+    background-color:#72f179;
+}
