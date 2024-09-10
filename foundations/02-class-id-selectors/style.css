@@ -1,20 +1,20 @@
 /* style,css */
 
-.odd { /* Type Selector (Can refer to multiple elements; element can also have multiple classes) */
+.odd { /* Class Selector (Can refer to multiple elements; element can also have multiple classes) */
     font-family: Verdana, DejaVu Sans, sans-serif;
     background-color: #f79489; 
 }
 
-#element3{ /* ID Selector (Only unique to one element) */
+.big-text{ 
     font-size: 24px;
 }
 
-.even.blue-txt { /* Chaining Class Selectors (In this case, using just blue-txt also works since selector will find the element under that class)*/
+#element2 { /* ID Selector (Only unique to one element) */
     color: blue;
     font-size: 32px;
 }
 
-.even#element4{ /* Chaining Class and ID Selectors*/
+#element4{ 
     font-size: 24px;
     font-weight: bold;
     background-color:#72f179;
