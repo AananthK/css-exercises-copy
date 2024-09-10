@@ -9,12 +9,12 @@
     font-size: 24px;
 }
 
-.even.blue-txt { /* Chaining Class Selectors*/
+.even.blue-txt { /* Chaining Class Selectors (In this case, using just blue-txt also works since selector will find the element under that class)*/
     color: blue;
     font-size: 32px;
 }
 
-.even#element4{
+.even#element4{ /* Chaining Class and ID Selectors*/
     font-size: 24px;
     font-weight: bold;
     background-color:#72f179;
