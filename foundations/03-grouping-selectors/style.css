@@ -1,0 +1,17 @@
+/* sty;e.css */
+
+.black,         /* This is a Grouping Selector: for classes with similar attributes*/
+.yellow {
+    font-size: 28px;
+    font-family: Helvetica, "Times New Roman", sans-serif;
+}
+
+/* Seperate selectors for each class is used for attributes unique to them */
+.black {
+    color: white;
+    background-color: black;
+}
+
+.yellow {
+    background-color: yellow;
+}
