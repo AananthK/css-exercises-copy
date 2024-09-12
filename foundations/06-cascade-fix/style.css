@@ -1,23 +1,37 @@
+/* style.css*/
+/* The Cascade - decides which rule to apply (prioritize) to element based on following
+
+    01: Selector Type
+        #1: ID selectors    (priority)
+        #2: class selectors
+        #3: type selectors
+    
+    02: Number of Selectors (specification)
+    
+    03: Inheritance: rules for parent elements is applied to child/ancestor elements
+        -if child element is directly targeted with rule, then this rule is prioritized, 
+
+    04: Occurance of Declaration: if all of the above cannot be applied, the latest rule is prioritized
+
+*/
+
+/* For this assignment, cannot edit styles (color,font....)*/
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.para,
-.small-para {
+.para{
   color: hsl(0, 0%, 0%);
   font-weight: 800;
 }
 
-.small-para {
+.para.small-para { /* 2 selectors for more specificity */
   font-size: 14px;
   font-weight: 800;
 }
 
-.para {
-  font-size: 22px;
-}
-
-.confirm {
+#confirm-button { /* ID selector for more specificity */
   background: green;
   color: white;
   font-weight: bold;
@@ -29,7 +43,7 @@ body {
   font-size: 20px;
 }
 
-.child {
+.text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
@@ -39,4 +53,8 @@ div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
+}
+
+.para { /* Last occurance: when no other rule is more specific */
+  font-size: 22px;
 }
