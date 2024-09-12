@@ -1,0 +1,14 @@
+/* style.css */
+
+/* Descendant Combinators 
+    For related selectors (parent - child - ancestor)
+    element is selected if 2nd selector is child (or ancestor) of 1st selector
+    Relationship can go as deep as you want: .one .two .three .four{} (NOT RECOMMENDED: Too messy)
+    */
+
+.container .text { /*Similar to chaining selectors but there is a space in between selectors*/
+    color: red;
+    background-color: yellow;
+    font-size: 20px;
+    text-align: center;
+}
