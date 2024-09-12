@@ -1,1 +1,13 @@
+/* style.css */
 /* Add CSS Styling */
+
+/* Chaining class selectors: For elements with more than one class(for specification) */
+.avatar.proportioned { /* classes "chained" by '.'; would be '#' for an ID */
+    height: auto; /* Image maintains it original proportions (only change width) */
+    width: 300px;
+}
+
+.avatar.distorted {
+    height: 400px;
+    width: 200px;
+}
