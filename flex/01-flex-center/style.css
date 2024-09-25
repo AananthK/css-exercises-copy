@@ -1,8 +1,15 @@
+/* style.css */
+
+/* Must edit this file to place div in the middle of container using flexbox */
 .container {
+  display: flex; /* Sets flex container (primary axis is horizonatal by default ) */
   background: dodgerblue;
   border: 4px solid midnightblue;
   width: 400px;
   height: 300px;
+
+  justify-content: center; /* Aligns items in the middle of primary axis */
+  align-items: center; /* Aligns flex items in the middle of cross axis of container */
 }
 
 .box {

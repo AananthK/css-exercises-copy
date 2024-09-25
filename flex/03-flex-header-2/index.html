@@ -1,3 +1,5 @@
+<!-- Must edit this file and style.css to achieve desired outcome -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,19 +10,26 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="header">
-      <div class="logo">
-        LOGO
+    <div class="header"> <!-- Header is a flex container with all elements inside it as flex items-->
+      
+      <div class = "rightside"> <!-- Add a container for rightside-->
+        <div class="logo">
+          LOGO
+        </div>
+        <ul class="links"> <!-- <ul> is a flex container with list items as flex items -->
+          <li><a href="https://google.com">link-one</a></li>
+          <li><a href="https://google.com">link-two</a></li>
+          <li><a href="https://google.com">link-three</a></li>
+        </ul>
       </div>
-      <ul class="links">
-        <li><a href="https://google.com">link-one</a></li>
-        <li><a href="https://google.com">link-two</a></li>
-        <li><a href="https://google.com">link-three</a></li>
-      </ul>
-      <button class="notifications">
-        1 new notification
-      </button>
-      <div class="profile-image"></div>
+
+      <div class = "leftside"> <!-- Add a container for leftside -->
+        <button class="notifications">
+          1 new notification
+        </button>
+        <div class="profile-image"></div>
+      </div>
+
     </div>
   </body>
 </html>

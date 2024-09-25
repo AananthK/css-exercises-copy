@@ -1,3 +1,5 @@
+/* style.css */
+
 /* this is some magical font-importing.  
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
@@ -9,9 +11,14 @@ body {
 }
 
 .header {
+  padding: 8px; /* 8px space between everything inside header and its edges */
+  display: flex;
+  align-items: center; /* Vertically center all items in header */
+  justify-content: space-between; /* This seperates rightside and leftside*/
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  gap: 16px; /* 16px gap between both sides of header */
 }
 
 .profile-image {
@@ -44,5 +51,22 @@ a {
 }
 
 ul {
+  display: flex;
+  margin:0;
+  padding: 0;
+  gap: 16px;
   list-style-type: none;
+}
+
+/* Added these two containers */
+.rightside{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.leftside{
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }

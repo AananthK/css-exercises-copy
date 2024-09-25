@@ -1,6 +1,13 @@
+/* style.css */
+
+/* Must achieve desired output by altering this file */
 .header  {
+  padding: 8px; /* Add padding to have space between header edges & elements inside header*/
+  display: flex;
   font-family: monospace;
   background: papayawhip;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -12,14 +19,16 @@
 }
 
 ul {
-  /* this removes the dots on the list items*/
-  list-style-type: none;
+  display: flex;
+  margin: 0; /* Setting margin and padding to 0 ensures that links don't have extra gap (>8px) from edge pf header*/
+  padding: 0;
+  gap: 8px; /* Set gap between all 8px list items */
+  list-style-type: none;  /* this removes the dots on the list items*/
 }
 
 a {
   font-size: 22px;
   background: white;
   padding: 8px;
-  /* this removes the line under the links */
-  text-decoration: none;
+  text-decoration: none;  /* this removes the line under the links */
 }
