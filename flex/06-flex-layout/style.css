@@ -1,14 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  justify-content: space-between;
 }
 
 img {
   width: 600px;
+  margin-bottom: 16px; /* Space between img and input*/
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  list-style: none; /* Remove bullet points fron list */
+  padding-right: 16px; /* Add required padding in both "header" and "footer" */
+  padding-left: 16px;
+  gap: 16px; /* add gap between links */
+}
+
+a { /* Styling links */
+  color: grey;
+  text-decoration: none; /* Removes underline from links */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
@@ -16,11 +45,19 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  margin-top: 16px;
+  padding: 8px 16px;
 }
 
 input {
   border: 1px solid #ddd;
   border-radius: 16px;
-  padding: 8px 24px;
+  padding: 8px 24px; /* top and bottom / left and right */
   width: 400px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eeeeee;
 }
